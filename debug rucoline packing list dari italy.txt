@@ -1,0 +1,247 @@
+DELETE FROM tbl_rucoline_packing_list a 
+WHERE a.plnopl like '20186405' and a.plnopo = '85' and a.plnokarton = '18/052819'
+
+UPDATE rpinspek
+SET 
+inpack = 0,
+innopl = '',
+innokarton = ''
+WHERE innopo = '85' AND innopl = '20186405' AND innokarton = '18/052819'
+
+SELECT warna FROM tbl_rucoline_po
+WHERE nopo = '85' AND eancode = '8055325769028'
+
+
+tbl_rucoline_packing_list
+rpinspek
+tbl_rucoline_rekap_packing_list
+
+
+SELECT warna FROM tbl_rucoline_po
+WHERE nopo = '138' AND eancode = '8055325803036' 
+
+SELECT * FROM rpinspek 
+WHERE incust = 'RL' AND innopo = '138' AND ininner = '8055325803036' AND inqc = 1 AND inpack = 0 
+
+UPDATE rpinspek 
+  SET
+  inpack = 0,
+  innopl = '20186403',
+  innokarton = '18/052718'
+  WHERE 
+  innopo = '138' AND 
+  ininner = '8055325803036' AND 
+  innobukti = 'RL/122018/0001554' AND 
+  innomp = 'X18095946 ' AND 
+  innoso = 'ERLSS19138     ' AND
+  inbaris = 'TI9 '
+
+INSERT INTO tbl_rucoline_packing_list 
+(plkdcust, plnmcust, plalmcust, plkotacust, plnegcust, plnopl, pltglkrm, plnopo, plartikel, plgroup,
+plmaterial, plkdwarna, plwarna, plnokarton, plsize, pleancode, plqty, plnomp, plnoso, access, komp, userby) 
+VALUES (
+  '0060002916',
+  'EVA INVESTMENTS & DEVELOPMENT LTD',
+  '12/F., 78 HUNG TO ROAD, KWUN TONG',
+  'KOWLOON, HONG KONG',
+  'HONG KONG',
+  '20186403',
+  '2018-12-21',
+  '138',
+  '3062-31013',
+  '3062',
+  '3062 ANEMONE',
+  '3',
+  'BIANCO',
+  '18/052718',
+  '36',
+  '8055325803036',
+  '1',
+  'X18095946 ',
+  'ERLSS19138     ',
+  now(),
+  'programmer # staf', 
+  'user 1'
+)
+
+INSERT INTO tbl_rucoline_packing_list 
+(plkdcust, plnmcust, plalmcust, plkotacust, plnegcust, plnopl, pltglkrm, plnopo, plartikel, plgroup,
+plmaterial, plkdwarna, plwarna, plnokarton, plsize, pleancode, plqty, plnomp, plnoso, access, komp, userby) 
+VALUES (
+  '0060002916',
+  'EVA INVESTMENTS & DEVELOPMENT LTD',
+  '12/F., 78 HUNG TO ROAD, KWUN TONG',
+  'KOWLOON, HONG KONG',
+  'HONG KONG',
+  '20186403',
+  '2018-12-21',
+  '138',
+  '3062-31013',
+  '3062',
+  '3062 ANEMONE',
+  '3',
+  'BIANCO',
+  '18/052718',
+  '36',
+  '8055325803036',
+  '1',
+  'X18095946 ',
+  'ERLSS19138     ',
+  now(),
+  'programmer # staf', 
+  'user 1'
+)
+
+INSERT INTO tbl_rucoline_packing_list 
+                        (plkdcust, plnmcust, plalmcust, plkotacust, plnegcust, plnopl, pltglkrm, plnopo, plartikel, plgroup,
+                        plmaterial, plkdwarna, plwarna, plnokarton, plsize, pleancode, plqty, plnomp, plnoso, access, komp, userby) 
+                        VALUES (
+                          '0060002916',
+                          'EVA INVESTMENTS & DEVELOPMENT LTD',
+                          '12/F., 78 HUNG TO ROAD, KWUN TONG',
+                          'KOWLOON, HONG KONG',
+                          'HONG KONG',
+                          '20186403',
+                          '2018-12-21',
+                          '138',
+                          '3062-31013',
+                          '3062',
+                          '3062 ANEMONE',
+                          '3',
+                          'BIANCO',
+                          '18/052718',
+                          '36',
+                          '8055325803036',
+                          '1',
+                          'X18095946 ',
+                          'ERLSS19138     ',
+                          now(),
+                          'programmer # staf', 
+                          'user 1'
+                        )INSERT INTO tbl_rucoline_packing_list 
+                        (plkdcust, plnmcust, plalmcust, plkotacust, plnegcust, plnopl, pltglkrm, plnopo, plartikel, plgroup,
+                        plmaterial, plkdwarna, plwarna, plnokarton, plsize, pleancode, plqty, plnomp, plnoso, access, komp, userby) 
+                        VALUES (
+                          '0060002916',
+                          'EVA INVESTMENTS & DEVELOPMENT LTD',
+                          '12/F., 78 HUNG TO ROAD, KWUN TONG',
+                          'KOWLOON, HONG KONG',
+                          'HONG KONG',
+                          '20186403',
+                          '2018-12-21',
+                          '138',
+                          '3062-31013',
+                          '3062',
+                          '3062 ANEMONE',
+                          '3',
+                          'BIANCO',
+                          '18/052718',
+                          '36',
+                          '8055325803036',
+                          '1',
+                          'X18095946 ',
+                          'ERLSS19138     ',
+                          now(),
+                          'programmer # staf', 
+                          'user 1'
+                        )INSERT INTO tbl_rucoline_packing_list 
+                        (plkdcust, plnmcust, plalmcust, plkotacust, plnegcust, plnopl, pltglkrm, plnopo, plartikel, plgroup,
+                        plmaterial, plkdwarna, plwarna, plnokarton, plsize, pleancode, plqty, plnomp, plnoso, access, komp, userby) 
+                        VALUES (
+                          '0060002916',
+                          'EVA INVESTMENTS & DEVELOPMENT LTD',
+                          '12/F., 78 HUNG TO ROAD, KWUN TONG',
+                          'KOWLOON, HONG KONG',
+                          'HONG KONG',
+                          '20186403',
+                          '2018-12-21',
+                          '138',
+                          '3062-31013',
+                          '3062',
+                          '3062 ANEMONE',
+                          '3',
+                          'BIANCO',
+                          '18/052718',
+                          '36',
+                          '8055325803036',
+                          '1',
+                          'X18095946 ',
+                          'ERLSS19138     ',
+                          now(),
+                          'programmer # staf', 
+                          'user 1'
+                        )INSERT INTO tbl_rucoline_packing_list 
+                        (plkdcust, plnmcust, plalmcust, plkotacust, plnegcust, plnopl, pltglkrm, plnopo, plartikel, plgroup,
+                        plmaterial, plkdwarna, plwarna, plnokarton, plsize, pleancode, plqty, plnomp, plnoso, access, komp, userby) 
+                        VALUES (
+                          '0060002916',
+                          'EVA INVESTMENTS & DEVELOPMENT LTD',
+                          '12/F., 78 HUNG TO ROAD, KWUN TONG',
+                          'KOWLOON, HONG KONG',
+                          'HONG KONG',
+                          '20186403',
+                          '2018-12-21',
+                          '138',
+                          '3062-31013',
+                          '3062',
+                          '3062 ANEMONE',
+                          '3',
+                          'BIANCO',
+                          '18/052718',
+                          '36',
+                          '8055325803036',
+                          '1',
+                          'X18095946 ',
+                          'ERLSS19138     ',
+                          now(),
+                          'programmer # staf', 
+                          'user 1'
+                        )INSERT INTO tbl_rucoline_packing_list 
+                        (plkdcust, plnmcust, plalmcust, plkotacust, plnegcust, plnopl, pltglkrm, plnopo, plartikel, plgroup,
+                        plmaterial, plkdwarna, plwarna, plnokarton, plsize, pleancode, plqty, plnomp, plnoso, access, komp, userby) 
+                        VALUES (
+                          '0060002916',
+                          'EVA INVESTMENTS & DEVELOPMENT LTD',
+                          '12/F., 78 HUNG TO ROAD, KWUN TONG',
+                          'KOWLOON, HONG KONG',
+                          'HONG KONG',
+                          '20186403',
+                          '2018-12-21',
+                          '138',
+                          '3062-31013',
+                          '3062',
+                          '3062 ANEMONE',
+                          '3',
+                          'BIANCO',
+                          '18/052718',
+                          '36',
+                          '8055325803036',
+                          '1',
+                          'X18095946 ',
+                          'ERLSS19138     ',
+                          now(),
+                          'programmer # staf', 
+                          'user 1'
+                        )INSERT INTO tbl_rucoline_packing_list 
+                        (plkdcust, plnmcust, plalmcust, plkotacust, plnegcust, plnopl, pltglkrm, plnopo, plartikel, plgroup,
+                        plmaterial, plkdwarna, plwarna, plnokarton, plsize, pleancode, plqty, plnomp, plnoso, access, komp, userby) 
+                        VALUES (
+                          '0060002916',
+                          'EVA INVESTMENTS & DEVELOPMENT LTD',
+
+
+SELECT warna FROM tbl_rucoline_po
+                WHERE nopo = '138' AND eancode = '8055325803036' SELECT * FROM rpinspek 
+                    WHERE incust = 'RL' AND innopo = '138' AND ininner = '8055325803036' AND inqc = 1 AND inpack = 0 SELECT warna FROM tbl_rucoline_po
+                WHERE nopo = '138' AND eancode = '8055325803012' SELECT * FROM rpinspek 
+                    WHERE incust = 'RL' AND innopo = '138' AND ininner = '8055325803012' AND inqc = 1 AND inpack = 0 SELECT warna FROM tbl_rucoline_po
+                WHERE nopo = '138' AND eancode = '8055325803029' SELECT * FROM rpinspek 
+                    WHERE incust = 'RL' AND innopo = '138' AND ininner = '8055325803029' AND inqc = 1 AND inpack = 0 SELECT warna FROM tbl_rucoline_po
+                WHERE nopo = '138' AND eancode = '8055325803036' SELECT * FROM rpinspek 
+                    WHERE incust = 'RL' AND innopo = '138' AND ininner = '8055325803036' AND inqc = 1 AND inpack = 0 SELECT warna FROM tbl_rucoline_po
+                WHERE nopo = '138' AND eancode = '8055325803036' SELECT * FROM rpinspek 
+                    WHERE incust = 'RL' AND innopo = '138' AND ininner = '8055325803036' AND inqc = 1 AND inpack = 0 SELECT warna FROM tbl_rucoline_po
+                WHERE nopo = '138' AND eancode = '8055325803036' SELECT * FROM rpinspek 
+                    WHERE incust = 'RL' AND innopo = '138' AND ininner = '8055325803036' AND inqc = 1 AND inpack = 0 SELECT warna FROM tbl_rucoline_po
+                WHERE nopo = '138' AND eancode = '8055325803050' SELECT * FROM rpinspek 
+                    WHERE incust = 'RL' AND innopo = '138' AND ininner = '8055325803050' AND inqc = 1 AND inpack = 0 SELECT * FROM tbl_rucoline_packing_list WHERE plnopo = '85' ORDER BY plnmcustd
